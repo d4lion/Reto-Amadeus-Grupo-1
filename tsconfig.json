@@ -6,7 +6,8 @@
     "baseUrl": "./src",
     "paths": {
       "@services/*": ["app/services/*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@components/*": ["app/components/*"]
     },
     "strict": true,
     "noImplicitOverride": true,
