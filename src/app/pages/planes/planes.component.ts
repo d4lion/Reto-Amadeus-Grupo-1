@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DestinoService } from '../../servicios/destino.service';
+import { DestinoService } from '@services/destino.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,11 +7,10 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './planes.component.html',
-  styleUrl: './planes.component.css'
+  styleUrl: './planes.component.css',
 })
 export class PlanesComponent {
-
-  constructor(public destinoService: DestinoService){}
+  constructor(public destinoService: DestinoService) {}
 
   destino = this.destinoService.destinoA;
   srcA = this.destinoService.srcA;
@@ -19,7 +18,4 @@ export class PlanesComponent {
 
   // destino = "Playa del Carmen";
   // srcA = "../../../assets/img/PlayaDelCarmen.jpg"
-
-
-
 }
