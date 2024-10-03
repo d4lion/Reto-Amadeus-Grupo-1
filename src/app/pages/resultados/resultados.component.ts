@@ -1,5 +1,5 @@
-import { Component, importProvidersFrom } from '@angular/core';
-import { DestinoService } from '@services/destino.service';
+import { Component } from '@angular/core';
+import { DestinoService } from '@services/destino/destino.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
