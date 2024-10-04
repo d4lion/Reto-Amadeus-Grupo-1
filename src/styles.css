@@ -1,4 +1,9 @@
-*{
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +16,7 @@
     --color01: #ffffff;
     --color02: #c5d5f9;
     --color03: #3a8bff;
-    
+
     /*  Botones fondo oscuro  */
     /*  .buttonBG-dark {}  */
     --colorButtonBG-dark: #0c66e1;
@@ -33,7 +38,7 @@
     --colorInputFont-light: #000835;
     --colorInputActive-light: #000835;
 
-    
+
     /*  Barras Amadeus  */
     --colorBand-black: #000000;
     --colorBand-dark: #000835;
@@ -44,17 +49,18 @@
     /*  Nombre Amadeus  */
     --colorAmadeus-dark: #000835;
     --colorAmadeus-light: #ffffff;
-    
+
     /*  Cuadros con números y texto  */
     --color07: #ebf3ff;
-    --color04: #0c66e1;             /* --color04 */
-    
+    --color04: #0c66e1;
+    /* --color04 */
+
     /*  iconos header  */
     --color08: #000000;
-    
+
     /*  Footer  */
     --color09: #666666;
-    
+
     /*  -  */
     --color11: #e4c7ff;
     --color12: #d396ff;
@@ -62,7 +68,7 @@
     /* Colores diferentes */
     /* https://amadeus.com/es/aerolineas/productos/nevio */
     /* https://amadeus.com/es/aerolineas/overview */
-    
+
 
     /*  check  */
     --color15: #a4d065;
@@ -73,5 +79,3 @@
     --zombra: #f0f0f0;
     --azulSobreOscuro: #c5d5f9;
 }
-
-
