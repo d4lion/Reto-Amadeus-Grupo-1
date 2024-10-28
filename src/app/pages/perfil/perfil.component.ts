@@ -54,22 +54,23 @@ export class PerfilComponent {
     }
   }
 
-  verificarNomb(event: Event) {
-    let nomUsuario = this.nombre.value;
+  verificarNomb() {
+    const nomUsuario = this.nombre.value?.trim();
 
-    if (nomUsuario == '') {
+    if (!nomUsuario) {
       this.estadoCorreo = 'Escribe su nombre';
+    } else {
+      this.estadoCorreo = '';
     }
   }
 
-  verificarCorreo(event: Event) {
-    let correoUsuario = this.correo.value;
+  verificarCorreo() {
+    const correoUsuario = this.correo.value?.trim();
 
-    if (correoUsuario == '') {
+    if (!correoUsuario) {
       this.estadoCorreo = 'Escribe un correo electrónico';
     } else {
-      let regEmail =
-        /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
+      const regEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (regEmail.test(correoUsuario)) {
         this.estadoCorreo = '';
